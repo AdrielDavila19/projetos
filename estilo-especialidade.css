@@ -1,0 +1,82 @@
+.container-links-especialidade {
+    text-align: center;
+    padding: 0 20px;
+}
+
+.links-especialidade {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.links-especialidade a{
+    text-decoration: none;
+    border-bottom: solid 2px #00cad1;
+    color: black;
+    margin: 0 10px 10px;
+    font-size: 18px;
+}
+
+
+.links-especialidade a:hover {
+    color: #00cad1;
+}
+
+/*tabelas*/
+
+
+.box-tabela {
+  display: flex;
+  height: 240px;
+  padding: 0 20px;
+}
+
+.box-tabela img {
+    width: 30%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tabela-especialista {
+    border-spacing: 0;
+    text-align: left;
+    width: 70%;
+    height: 100%;
+  }
+
+  .tabela-especialista thead tr {
+    background-color: #00cad1;
+    color: #fff;
+  }
+  
+  .tabela-especialista tr {
+    background-color: #f1f1f1;
+    color: #585757;
+    font-weight: 500;
+  }
+
+  .tabela-especialista tbody tr:nth-of-type(odd) {
+    background-color: #cdcdcd;
+    border: 1px solid #f1f1f1;
+  }
+
+  .tabela-especialista th, .tabela-especialista td {
+    padding: 10px;
+  }
+
+  .tabela-especialista {
+    width: 100%;
+  }
+
+
+  /*media queries*/
+
+  @media (max-width: 768px) {
+    .box-tabela img { display: none;}
+  }
+
+  @media (max-width: 425px) {
+    .box-tabela { padding: 0; }
+  }

@@ -1,0 +1,216 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+ 
+}
+
+ h2, p, h3{
+   color: dimgray;
+}
+
+main {
+    color: #0000008c;
+    margin-bottom: 60px;
+  }
+
+/*barra-topo*/
+
+.topo{
+    background-color: #00cad1;
+
+}
+
+.links-topo {
+    margin-left: 15px;
+    padding: 10px;
+}
+
+.links-topo a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.links-topo a:hover{
+   color: dimgray;
+}
+
+
+header div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    min-height: 60px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.limita-secao{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+header img{
+    width: 150px;
+}
+
+header nav{
+    font-size: 18px;
+}
+
+
+/*capa*/
+
+.container-capa{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-image: url('../recepcao.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-titulo{
+    color: #fff;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.container-capa h1{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+
+/*conteudo-lista*/
+
+.secao-conteudo{
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+.secao-conteudo h2 h3{
+    margin:0;
+}
+
+.box-sobre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: dimgray;
+}
+
+.box-sobre h3{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/*especialidades*/
+
+.box-especialidade{
+    box-shadow: 0 1px 8px ;
+    border-radius: 4px;
+    margin: 20px;
+    width: calc(100% / 3 - 40px);
+}
+
+.box-especialidades{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-especialidade img{
+    width: 100%;
+}
+
+.box-especialidade figcaption{
+    text-align: center;
+    text-transform: uppercase;
+    color: dimgray;
+    padding: 10px;
+}
+
+/*botao-horario*/
+
+.link-horario {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #0d8286;
+    border: solid 10px #0d8286;
+}
+
+.box-link-horario{
+    text-align: center;
+    padding: 50px;
+}
+
+/*localizacao*/
+
+.localizacao {
+    padding: 15px;
+}
+
+.localizacao:hover{
+    box-shadow: 0 0 20px;
+}
+
+/*rodape*/
+
+footer{
+    background-color: #0d8286;
+    padding: 20px;
+}
+
+footer p{
+    color: #fff;
+}
+
+footer img{
+    width: 150px;
+}
+
+footer .limita-secao{
+    text-align: center;
+}
+
+/*media queries*/
+
+
+
+@media (max-width: 425px) {
+    .topo .limita-secao{flex-direction: column;}
+    .links-topo { border-top: solid 1px #278185 ; justify-content: space-around;}
+    .box-especialidades {justify-content: center;}
+}
+
+@media (max-width: 768px) {
+    .container-capa { height: 300px;}
+    .box-sobre img { display: none;}
+    .box-especialidades {justify-content: center;}
+    .box-especialidade {
+      width: calc(100% / 2 - 40px);
+    }
+  }
+  
+  @media (max-width: 425px) {
+    .container-capa { height: 200px;}
+    .container-capa h1 { font-size: 28px;}
+    .box-especialidade {
+      width: 100%;
+    }
+  }
+
+
+  @media (max-width: 1024px) {
+     .container-capa {height: 400px;}
+  }
